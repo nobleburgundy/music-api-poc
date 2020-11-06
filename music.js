@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("#music-list").empty();
 
     $.ajax({
-      url: `http://ws.audioscrobbler.com/2.0/?method=tag.gettoptracks&tag=${searchWord}&api_key=${LASTFM_API_KEY}&format=json`,
+      url: `https://ws.audioscrobbler.com/2.0/?method=tag.gettoptracks&tag=${searchWord}&api_key=${LASTFM_API_KEY}&format=json`,
       method: "POST",
     }).then(function (response) {
       let trackArray = response.tracks.track;
