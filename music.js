@@ -1,7 +1,6 @@
 const LASTFM_API_KEY = "174cadade97542fff7b88f7fc3b6a9ee";
 const LASTFM_SHARED_SECRET = "d0a5f066262e0666df0adf9c1af172da";
 let searchWord = "";
-let apiURL = `http://ws.audioscrobbler.com/2.0/?method=tag.gettoptracks&tag=${searchWord}&api_key=${LASTFM_API_KEY}&format=json`;
 
 $(document).ready(function () {
   $("#music-word-form").on("submit", function (event) {
